@@ -10,7 +10,7 @@ int main()
 {
     cin >> n;
     cin >> x;
-    for (int i=0;i<n;i++) {
+    for (int i=0;i<n-1;i++) {
         cin >> op >> b;
         switch (op){
         case '+':
@@ -23,7 +23,7 @@ int main()
             x=x*b;
             break;
         case '/':
-            x=x*b;
+            x=x/b;
             break;
         case '%':
             x=(int)x%(int)b;
@@ -37,3 +37,4 @@ int main()
         cout << x;
     }
 }
+//1|+2|+3|+4|+5|
